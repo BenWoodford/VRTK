@@ -5,13 +5,13 @@ rvm:
 - 2.2
 
 before_install:
-- chmod a+x ./scripts/*.sh
+- chmod a+x ./travis-scripts/*.sh
 
 install:
-- ./scripts/install-unity.sh
+- ./travis-scripts/install-unity.sh
 
 script:
-- ./scripts/build.sh && ./scripts/run-tests.sh
+- ./travis-scripts/build-unity-project.sh
 
 after_success:
-- ./scripts/export-package.sh
+- ./travis-scripts/export-package.sh
