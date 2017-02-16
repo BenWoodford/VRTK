@@ -6,8 +6,8 @@ rvm:
 notifications:
   email: false
   
- cache:
-  directories:
+cache:
+ directories:
     - ./Unity
 
 before_install:
