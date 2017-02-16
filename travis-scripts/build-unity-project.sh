@@ -5,7 +5,7 @@ log_file=$(pwd)/build/unity-mac.log
 
 error_code=0
 
-echo "Building project for Mac OS."
+echo "Building project for Windows."
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
   -batchmode \
   -nographics \
@@ -15,15 +15,15 @@ echo "Building project for Mac OS."
   -buildWindowsPlayer "$(pwd)/build/windows/vrtk.exe" \
   -quit
 if [ $? = 0 ] ; then
-  echo "Building Mac OS completed successfully."
+  echo "Building Windows completed successfully."
   error_code=0
 else
-  echo "Building Mac OS failed. Exited with $?."
+  echo "Building Windows failed. Exited with $?."
   error_code=1
 fi
 
-echo 'Build logs:'
-cat $log_file
+#echo 'Build logs:'
+#cat $log_file
 
 echo "Finishing with code $error_code"
 exit $error_code
