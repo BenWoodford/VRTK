@@ -15,3 +15,6 @@ script:
 
 after_success:
 - ./travis-scripts/export-package.sh
+
+notifications:
+  email: false
