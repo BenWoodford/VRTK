@@ -9,6 +9,7 @@ before_install:
 
 install:
 - ./travis-scripts/install-unity.sh
+- ./travis-scripts/install-libs.sh
 
 script:
 - ./travis-scripts/build-unity-project.sh
