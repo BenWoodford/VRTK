@@ -1,6 +1,6 @@
 #! /bin/sh
 
-project_path=$(pwd)/src/VRTK
+project_path=$(pwd)
 log_file=$(pwd)/build/unity-mac.log
 
 error_code=0
