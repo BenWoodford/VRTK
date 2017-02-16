@@ -10,7 +10,7 @@ echo "Building project for Mac OS."
   -batchmode \
   -nographics \
   -silent-crashes \
-  -logFile "$log_file" \
+  -logFile \
   -projectPath "$project_path" \
   -buildWindowsPlayer "$(pwd)/build/windows/vrtk.exe" \
   -quit
